@@ -1,0 +1,25 @@
+; JED2EQN -- JEDEC file to Boolean Equations disassembler (Version V063)
+; Copyright (c) National Semiconductor Corporation 1990-1993
+; Disassembled from atf.jed. Date: 11-15-121
+;$GALMODE SMALL
+
+chip atf GAL16V8
+
+nc1=1 i2=2 i3=3 i4=4 i5=5 i6=6 i7=7 i8=8 i9=9 GND=10 !i11=11 
+o12=12 o13=13 f14=14 o15=15 o16=16 f17=17 o18=18 f19=19 VCC=20 
+
+@ues 3030200000000000
+@ptd unused
+
+equations
+
+!o18 = !i5 AND !i9
+    + !i8 AND i11
+!o16 = !i4 AND !i9
+    + !i7 AND i11
+!o15 = !i9
+!o13 = !f14
+    + !i2 AND !f17 AND !i6
+    + !i3 AND !f19 AND !i6
+!o12 = !i2 AND !f17
+    + !i3 AND !f19

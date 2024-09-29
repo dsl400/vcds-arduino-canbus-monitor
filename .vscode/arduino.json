@@ -1,0 +1,7 @@
+{
+    "configuration": "bootloader=uart1,eeprom=keep,BOD=2v7,LTO=Os,clock=7_3728MHz_external",
+    "board": "MajorCore:avr:162",
+    "port": "COM5",
+    "sketch": "arduino-canbus-monitor.ino",
+    "output": "build"
+}
